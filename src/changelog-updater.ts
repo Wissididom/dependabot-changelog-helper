@@ -117,7 +117,7 @@ export class DefaultChangelogUpdater implements ChangelogUpdater {
   }
 
   private buildEntryLineStart(entry: VersionEntry): string {
-    return `- ${this.entryPrefix} \`${entry.package}\` from`
+    return `[dependabot skip] - ${this.entryPrefix} \`${entry.package}\` from`
   }
 
   private buildEntryLine(entry: VersionEntry): string {
